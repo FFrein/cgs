@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23.5px 8.6px;
+}
+
+.header-list{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    gap: 42px;
+    align-items: center;
+}
