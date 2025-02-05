@@ -1,16 +1,35 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 23.5px 8.6px;
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23.5px 8.6px;
 }
 
-.header-list{
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    list-style: none;
-    gap: 42px;
-    align-items: center;
+.header-list {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  gap: 42px;
+  align-items: center;
+}
+
+.header-list li {
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  width: 110px;
+  height: 50px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+  opacity: 0px;
+
+  cursor: pointer;
 }
