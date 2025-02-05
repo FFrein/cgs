@@ -312,12 +312,22 @@ a {
   margin-top: 71px;
 }
 .custom-form-input {
+  color: rgba(255, 255, 255, 1);
   border: none;
   width: 97.8%;
   margin-top: 13px;
   padding: 25px 0 25px 30px;
   background-color: rgba(39, 39, 39, 1);
   border-radius: 20px;
+
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 .custom-form-input:focus {
   outline: none;

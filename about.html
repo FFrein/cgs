@@ -6,26 +6,105 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <title>CGS | О нас</title>
+    <title>2DP | О нас</title>
     <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="stylesheet" href="./src/css/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Unbounded:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="base_wrapper">
     <header class="header">
       <a href="./index.html">
-        <img src="./public/CGS.png" alt="logo" />
+        <img src="./public/logo-nav.svg" alt="logo" />
       </a>
 
       <ui class="header-list">
-        <li class="dsd-text4">Магазин</li>
-
-        <a href="./portfolio.html"> <li class="dsd-text4">Портфолио</li> </a>
-        <a href="./about.html">
-          <li class="dsd-text4">О нас</li>
+        <a href="./portfolio.html">
+          <li class="tdp-desk-bar-1 tdp-white">Портфолио</li>
         </a>
-        <li class="dsd-text4">Услуги</li>
-        <li class="dsd-text4">Заказать</li>
-        <li class="dsd-text4 sign-in-btn">Войти</li>
+        <a href="./about.html">
+          <li class="tdp-desk-bar-1 tdp-white">О нас</li>
+        </a>
+        <li class="tdp-desk-bar-1 tdp-white">Услуги</li>
+        <li class="tdp-desk-bar-1 tdp-green-color">Заказать</li>
       </ui>
     </header>
+
+    <article class="about-studia">
+      <h1 class="tdp-header-2 tdp-white">О нашей студии</h1>
+      <p class="tdp-white tdp-text-1">
+        Творческое объединение профессионалов из разных областей, связанных
+        общей целью - делать жизнь окружающих людей лучше и быть надежным
+        партнером бизнеса.
+      </p>
+    </article>
+
+    <article class="work-process">
+      <h2 class="tdp-white tdp-header-2">Процесс работы</h2>
+      <ol class="work-process-ol">
+        <li class="work-process-li tdp-text-2 tdp-white">Сбор информации</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Исследование</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Проектировка</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Детализация</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Презентация</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Внедрение</li>
+        <li class="work-process-li tdp-text-2 tdp-white">Поддержка</li>
+      </ol>
+    </article>
+
+    <article class="lets-implement-your-idea">
+      <h2 class="tdp-header-2 tdp-white">Давайте решим вашу проблему</h2>
+      <form id="application-form">
+        <div class="custom-form-div">
+          <h3 class="tdp-text-2 tdp-white custom-form-input-title">
+            Как вас зовут
+          </h3>
+          <input
+            class="custom-form-input tdp-text-2"
+            id="Как вас зовут"
+            type="text"
+            placeholder="Ваше имя*"
+          />
+        </div>
+        <div class="custom-form-div">
+          <h3 class="tdp-text-2 tdp-white custom-form-input-title">E-mail</h3>
+          <input
+            class="custom-form-input tdp-text-2"
+            id="Ваша почта"
+            type="text"
+            placeholder="Ваша почта*"
+          />
+        </div>
+        <div class="custom-form-div">
+          <h3 class="tdp-text-2 tdp-white custom-form-input-title">
+            Контактный номер телефона
+          </h3>
+          <input
+            class="custom-form-input tdp-text-2"
+            id="Контактный номер телефона"
+            type="text"
+            placeholder="Ваша номер*"
+          />
+        </div>
+        <div class="custom-form-div">
+          <h3 class="tdp-text-2 tdp-white custom-form-input-title">
+            Где будем обсуждать?
+          </h3>
+          <input
+            class="custom-form-input tdp-text-2"
+            id="Где будем обсуждать?"
+            type="text"
+            placeholder="Напишите удобную вам соц. сеть/мессенджер*"
+          />
+        </div>
+      </form>
+      <div class="long-button tdp-green-bg tdp-desk-button-1">
+        Заказать разработку
+      </div>
+    </article>
   </body>
 </html>
