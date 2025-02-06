@@ -1,4 +1,4 @@
-import { productCard } from "./src/components/card.js";
+import { productCard } from "./components/card.js";
 
 function main() {
   const conceptPortfolio = document.getElementById(

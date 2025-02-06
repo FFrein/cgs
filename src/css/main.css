@@ -112,11 +112,45 @@ a {
   text-decoration-skip-ink: none;
 }
 
+.tdp-text-3 {
+  font-family: Unbounded;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30.75px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.tdp-text-6 {
+  font-family: Unbounded;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34.72px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+/*HEADER*/
+
 .header-1 {
   font-family: "Unbounded";
   font-size: 64px;
   font-weight: 700;
   line-height: 79.36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.subheader-4 {
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -194,7 +228,8 @@ a {
   background-color: rgba(39, 39, 39, 1);
 }
 
-.tdp-black-cl {
+.tdp-black-cl,
+.tdp-black-color {
   color: rgba(27, 27, 27, 1);
 }
 
