@@ -47,6 +47,9 @@
 }
 
 @media (max-width: 1178px) {
+  .lets-implement-your-idea {
+    margin-top: 106px;
+  }
   .order-title {
     @include main.subheader-2;
   }
@@ -55,8 +58,8 @@
   }
   .custom-form-input {
     @include main.tdp-text-4;
-    padding: 15px 0 15px 30px;
-    border-radius: 14px;
+    padding: 20px 0 20px 30px;
+    border-radius: 7px;
   }
   .custom-form-div {
     margin-top: 42px;
@@ -66,5 +69,6 @@
     border-radius: 14px;
     padding: 15px;
     text-align: center;
+    margin-top: 42px;
   }
 }

@@ -42,3 +42,18 @@
   height: 513px;
   margin-top: auto;
 }
+@media (max-width: 1178px) {
+  .tab-main-text {
+    @include main.tdp-text-3;
+  }
+  .tab-service-title {
+    @include main.subheader-5;
+  }
+  .tab-service-text {
+    @include main.tdp-text-3;
+  }
+  .service-tab-img {
+    width: 345px;
+    height: 345px;
+  }
+}

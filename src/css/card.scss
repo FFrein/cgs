@@ -1,5 +1,6 @@
 @use "./main.scss" as main;
 .product-card {
+  cursor: pointer;
 }
 .product-card-img {
   border-radius: 20px;

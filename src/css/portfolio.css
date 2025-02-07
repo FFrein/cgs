@@ -183,6 +183,63 @@ a {
   text-align: center;
 }
 
+@media (max-width: 1178px) {
+  .lets-implement-your-idea {
+    margin-top: 106px;
+  }
+  .order-title {
+    font-family: Unbounded;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 35.96px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input-title {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px 0 20px 30px;
+    border-radius: 7px;
+  }
+  .custom-form-div {
+    margin-top: 42px;
+  }
+  .long-button {
+    font-family: Unbounded;
+    font-size: 14.93px;
+    font-weight: 900;
+    line-height: 23.89px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 42px;
+  }
+}
+.product-card {
+  cursor: pointer;
+}
+
 .product-card-img {
   border-radius: 20px;
   width: 387px;
@@ -202,9 +259,26 @@ a {
   text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
   margin-top: 30px;
-  width: 387px;
+  width: 275px;
 }
 
+@media (max-width: 1178px) {
+  .product-card-img {
+    width: 275px;
+    height: 275px;
+  }
+  .product-card-title {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 21px;
+  }
+}
 /*conceptual-portfolio*/
 .conceptual-portfolio {
   margin-top: 150px;
@@ -242,10 +316,46 @@ a {
 .product-card-title {
   margin-top: 30px;
   width: 387px;
+  font-family: "Unbounded";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .cncptl-prtfl-big-white-button {
   margin-top: 44px;
+}
+
+@media (max-width: 1178px) {
+  .conceptual-portfolio-store {
+    display: grid;
+    grid-template-columns: repeat(3, 275px);
+    row-gap: 35px;
+    column-gap: 28px;
+    justify-content: center;
+    margin-top: 44px;
+  }
+  .product-card-img {
+    border-radius: 20px;
+    width: 275px;
+    height: 275px;
+  }
+  .product-card-title {
+    margin-top: 21px;
+    width: 275px;
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
 }
 
 /*# sourceMappingURL=portfolio.css.map */
