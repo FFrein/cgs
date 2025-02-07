@@ -1,31 +1,49 @@
 @use "./main.scss" as main;
+
 .header {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 23.5px 8.6px;
+  position: relative; // Добавлено для позиционирования меню
 }
 
+// Бургер-иконка (по умолчанию скрыта)
+.burger-menu {
+  color: white;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+// Меню списка
 .header-list {
   display: flex;
   flex-direction: row;
-  text-decoration: none;
   list-style: none;
   gap: 42px;
   align-items: center;
+
+  li a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
+// Стили для элементов списка
 .header-li,
 .header-li-gr {
   @include main.tdp-desk-bar-1;
   @include main.tdp-white-color;
   cursor: pointer;
 }
+
 .header-li-gr {
   @include main.tdp-green-color;
 }
 
+// Кнопка входа
 .sign-in-btn {
   display: flex;
   justify-content: center;
@@ -36,21 +54,66 @@
   height: 50px;
   border-radius: 8px;
   border: 2px solid #000000;
-  opacity: 0px;
-
   cursor: pointer;
 }
 
+// Меняем шрифты на разрешении меньше 1178px
 @media (max-width: 1178px) {
   .header-li,
   .header-li-gr {
     @include main.tdp-desk-bar-2;
-    cursor: pointer;
   }
 }
 
+// 📌 Мобильная версия (бургер-меню)
 @media (max-width: 920px) {
   .header-list {
+    display: none; // Прячем список
+  }
+
+  .burger-menu {
+    display: block; // Показываем бургер-иконку
+  }
+
+  // Стили для выпадающего мобильного меню
+  .nav-menu {
     display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 99;
+    animation: fadeIn 0.3s ease-in-out; // Анимация появления
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    li {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+
+  // Когда меню открыто
+  .nav-menu.active {
+    display: block;
+  }
+}
+
+// 🔥 Анимация появления меню
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
