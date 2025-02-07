@@ -72,3 +72,19 @@
     height: 15px;
   }
 }
+
+@media (max-width: 920px) {
+  .base_wrapper {
+    max-width: 348px;
+    margin: auto;
+  }
+  .wwd-li {
+    @include main.tdp-text-9;
+    max-width: 348px;
+    padding: 30px 60px 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+  }
+}

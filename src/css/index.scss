@@ -142,3 +142,23 @@
     grid-template-columns: repeat(3, 275px);
   }
 }
+
+@media (max-width: 920px) {
+  .edp-title {
+    @include main.subheader-3;
+    max-width: 348px;
+  }
+  .edp-subtitle {
+    @include main.tdp-text-5;
+    max-width: 348px;
+  }
+  .wwcd-button-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .conceptual-portfolio-store {
+    display: flex;
+    flex-direction: column;
+  }
+}

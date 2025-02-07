@@ -22,6 +22,10 @@
   @include main.tdp-white-color;
 }
 .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; // Растягивание карточек
 }
 .product-card-img {
   border-radius: 20px;
@@ -35,6 +39,7 @@
   margin-top: 30px;
   width: 387px;
   @include main.tdp-text-1;
+  overflow: hidden;
 }
 .cncptl-prtfl-big-white-button {
   margin-top: 44px;
@@ -61,5 +66,29 @@
     margin-top: 21px;
     width: 275px;
     @include main.tdp-text-3;
+  }
+}
+
+@media (max-width: 920px) {
+  .conceptual-portfolio-store {
+    display: grid;
+    grid-template-columns: repeat(2, 168px);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    justify-content: center;
+
+    margin-top: 20px;
+  }
+
+  .product-card-img {
+    border-radius: 20px;
+    width: 164px;
+    height: 164px;
+  }
+  .product-card-title {
+    margin-top: 21px;
+    width: 164px;
+    @include main.tdp-text-5;
   }
 }
