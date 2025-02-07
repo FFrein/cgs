@@ -35,46 +35,46 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-.dsd-h1 {
+@mixin dsd-h1 {
   font-size: 34px;
   font-weight: 400;
   line-height: 52px;
   text-decoration-skip-ink: none;
 }
-.dsd-h2 {
+@mixin dsd-h2 {
   font-size: 26px;
   font-weight: 400;
   line-height: 39px;
   text-decoration-skip-ink: none;
 }
-.dsd-h3 {
+@mixin dsd-h3 {
   font-size: 21px;
   font-weight: 900;
   text-decoration-skip-ink: none;
 }
-.dsd-text1 {
+@mixin dsd-text1 {
   font-size: 21px;
   font-weight: 700;
   text-decoration-skip-ink: none;
 }
-.dsd-text2 {
+@mixin dsd-text2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 2px;
   text-decoration-skip-ink: none;
 }
-.dsd-text3 {
+@mixin dsd-text3 {
   font-size: 17px;
   font-weight: 700;
   text-decoration-skip-ink: none;
 }
-.dsd-text4 {
+@mixin dsd-text4 {
   font-size: 18px;
   font-weight: 700;
   text-decoration-skip-ink: none;
 }
-.dsd-btn-stroke {
+@mixin dsd-btn-stroke {
   font-size: 18px;
   font-weight: 800;
   line-height: 27px;
@@ -82,15 +82,14 @@ a {
   text-decoration-skip-ink: none;
   cursor: pointer;
 }
-.dsd-btn {
+@mixin dsd-btn {
   font-size: 17px;
   font-weight: 400;
   line-height: 25.5px;
   cursor: pointer;
 }
 
-.text-1,
-.tdp-text-1 {
+@mixin tdp-text-1 {
   font-family: "Unbounded";
   font-size: 21px;
   font-weight: 400;
@@ -101,7 +100,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-text-2 {
+@mixin tdp-text-2 {
   font-family: Unbounded;
   font-size: 21px;
   font-weight: 400;
@@ -112,7 +111,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-text-3 {
+@mixin tdp-text-3 {
   font-family: Unbounded;
   font-size: 15px;
   font-weight: 400;
@@ -123,7 +122,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-text-6 {
+@mixin tdp-text-6 {
   font-family: Unbounded;
   font-size: 28px;
   font-weight: 700;
@@ -135,7 +134,7 @@ a {
 
 /*HEADER*/
 
-.header-1 {
+@mixin header-1 {
   font-family: "Unbounded";
   font-size: 64px;
   font-weight: 700;
@@ -145,7 +144,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.subheader-4 {
+@mixin subheader-4 {
   font-family: Unbounded;
   font-size: 21px;
   font-weight: 900;
@@ -158,7 +157,7 @@ a {
 
 /*2DP Desk*/
 
-.tdp-desk-bar-1 {
+@mixin tdp-desk-bar-1 {
   font-family: "Montserrat";
   font-size: 23px;
   font-weight: 700;
@@ -169,7 +168,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-desk-bar-2 {
+@mixin tdp-desk-bar-2 {
   font-family: "Unbounded";
   font-size: 14.93px;
   font-weight: 700;
@@ -179,7 +178,7 @@ a {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.tdp-desk-button-1 {
+@mixin tdp-desk-button-1 {
   font-family: "Unbounded";
   font-size: 25px;
   font-weight: 900;
@@ -189,7 +188,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-header-1 {
+@mixin tdp-header-1 {
   font-family: "Unbounded";
   font-size: 64px;
   font-weight: 700;
@@ -199,7 +198,7 @@ a {
   text-decoration-skip-ink: none;
 }
 
-.tdp-header-2 {
+@mixin tdp-header-2 {
   font-family: "Unbounded";
   font-size: 41px;
   font-weight: 800;
@@ -211,141 +210,33 @@ a {
 
 /*colors*/
 
-.tdp-white,
-.tdp-white-color {
+@mixin tdp-white-color {
   color: rgba(255, 255, 255, 1);
 }
 
-.tdp-green-color {
+@mixin tdp-green-color {
   color: rgba(198, 255, 52, 1);
 }
 
-.tdp-green-bg {
+@mixin tdp-green-bg {
   background-color: rgba(198, 255, 52, 1);
 }
 
-.tdp-grey-bg {
+@mixin tdp-grey-bg {
   background-color: rgba(39, 39, 39, 1);
 }
 
-.tdp-black-cl,
-.tdp-black-color {
+@mixin tdp-black-color {
   color: rgba(27, 27, 27, 1);
 }
 
-.tdp-black-bg {
+@mixin tdp-black-bg {
   background-color: rgba(27, 27, 27, 1);
 }
 
-/*custom shared items*/
-.big-button {
-  display: flex;
-  width: 473px;
-  height: 79px;
-  border-radius: 20px;
-
-  align-items: center;
-  justify-content: center;
-}
-.csi-big-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 79px;
-
-  border-radius: 20px;
-}
-.styled-hr {
-  margin: 66px 0px;
-}
-
-/*clarity-graphic-studio*/
-.clarity-graphic-studio {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  margin-top: 111px;
-  width: 822px;
-}
-.cgs-left-col {
-  display: flex;
-  flex-direction: column;
-  gap: 62px;
-}
-.cgs-right-col {
-}
-.cgs-studio-title {
-  display: flex;
-  gap: 20px;
-}
-
-.cgs-principles {
-}
-/*what-are-we-doing*/
-.what-are-we-doing {
-  margin-top: 150px;
-}
-.wawd-title {
-}
-.wwcd-button-menu {
-  display: grid;
-  grid-template-columns: 598px 598px;
-  row-gap: 44px;
-  column-gap: 50px;
-  margin-top: 45px;
-}
-.menu-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 79px;
-  background-color: rgba(29, 29, 29, 1);
-  border-radius: 20px;
-}
-.wwcd-big-button {
-  margin-top: 49px;
-}
-
-/*lets implement your idea*/
-.lets-implement-your-idea {
-  margin-top: 150px;
-}
-.custom-form-div {
-  margin-top: 71px;
-}
-.custom-form-input {
-  color: rgba(255, 255, 255, 1);
-  border: none;
-  width: 97.8%;
-  margin-top: 13px;
-  padding: 25px 0 25px 30px;
-  background-color: rgba(39, 39, 39, 1);
-  border-radius: 20px;
-
-  font-family: Unbounded;
-  font-size: 21px;
-  font-weight: 400;
-  line-height: 43.05px;
-  letter-spacing: 0.14em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.custom-form-input:focus {
-  outline: none;
-}
-.custom-form-input-title {
-}
-.long-button {
-  border-radius: 20px;
-  margin-top: 75px;
-  margin-bottom: 200px;
-  padding: 30px;
-  text-align: center;
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 1178px) {
+  .base_wrapper {
+    max-width: 882px;
+    margin: auto;
+  }
 }

@@ -1,0 +1,108 @@
+@use "./header.scss";
+@use "./card.scss";
+@use "./orderForm.scss";
+@use "./main.scss" as main;
+/*Hello block*/
+.edp-title {
+  @include main.header-1;
+  @include main.tdp-white-color;
+}
+.edp-subtitle {
+  @include main.tdp-text-1;
+  @include main.tdp-white-color;
+}
+.edp-subtitle-button {
+  @include main.tdp-desk-button-1;
+  @include main.tdp-green-bg;
+  @include main.tdp-black-color;
+
+  display: flex;
+  width: 473px;
+  height: 79px;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+/*conceptual-portfolio*/
+.conceptual-portfolio {
+  margin-top: 150px;
+}
+.cp-title {
+  @include main.tdp-header-2;
+  @include main.tdp-white-color;
+}
+.conceptual-portfolio-store {
+  display: grid;
+  grid-template-columns: repeat(3, 386px);
+  row-gap: 44px;
+  column-gap: 35px;
+
+  justify-content: center;
+
+  margin-top: 44px;
+}
+.cncptl-prtfl-big-white-button {
+  margin-top: 44px;
+}
+
+/*clarity-graphic-studio*/
+.clarity-graphic-studio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 111px;
+  width: 822px;
+}
+.cgs-left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+}
+.cgs-right-col {
+}
+.cgs-studio-title {
+  display: flex;
+  gap: 20px;
+}
+/*what-are-we-doing*/
+.what-are-we-doing {
+  @include main.tdp-white-color;
+  margin-top: 150px;
+}
+.wawd-title {
+  @include main.tdp-header-2;
+}
+.wwcd-button-menu {
+  display: grid;
+  grid-template-columns: 598px 598px;
+  row-gap: 44px;
+  column-gap: 50px;
+  margin-top: 45px;
+}
+.menu-button {
+  @include main.tdp-white-color;
+  @include main.tdp-desk-button-1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 79px;
+  background-color: rgba(29, 29, 29, 1);
+  border-radius: 20px;
+}
+.wwcd-big-button {
+  @include main.tdp-grey-bg;
+  @include main.tdp-desk-button-1;
+
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 79px;
+
+  border-radius: 20px;
+}

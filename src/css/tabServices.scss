@@ -1,0 +1,44 @@
+@use "./main.scss" as main;
+.tab-service-wrapper {
+  @include main.tdp-grey-bg;
+  margin-top: 36px;
+}
+.tab-service {
+  @include main.tdp-grey-bg;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tab-service-title {
+  @include main.subheader-4;
+  @include main.tdp-green-bg;
+  @include main.tdp-black-color;
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 45px;
+}
+.tab-block {
+  @include main.tdp-grey-bg;
+}
+.tab-service-text {
+  @include main.tdp-text-1;
+  @include main.tdp-white-color;
+  @include main.tdp-grey-bg;
+  margin-top: 17px;
+}
+.tab-main-text {
+  @include main.tdp-text-1;
+  @include main.tdp-white-color;
+  @include main.tdp-grey-bg;
+  max-width: 722px;
+}
+.tab-left-col {
+  @include main.tdp-grey-bg;
+  max-width: 549px;
+}
+.service-tab-img {
+  @include main.tdp-grey-bg;
+  width: 513px;
+  height: 513px;
+  margin-top: auto;
+}

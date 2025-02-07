@@ -1,0 +1,60 @@
+@use "./header.scss";
+@use "./card.scss";
+@use "./orderForm.scss";
+@use "./main.scss" as main;
+/*О нашей студии*/
+.about-studia {
+  margin-top: 106px;
+}
+.as-title {
+  @include main.tdp-header-2;
+  @include main.tdp-white-color;
+}
+.as-subtitle {
+  @include main.tdp-white-color;
+  @include main.tdp-text-1;
+}
+/*Процесс работы*/
+.work-process {
+  margin-top: 150px;
+}
+.wp-title {
+  @include main.tdp-white-color;
+  @include main.tdp-header-2;
+}
+.work-process-ol {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0;
+}
+
+.work-process-li {
+  @include main.tdp-text-2;
+  @include main.tdp-white-color;
+  background-color: rgba(39, 39, 39, 1);
+  padding: 40px 50px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.work-process-li::after {
+  content: "";
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 29px;
+  height: 15px;
+  background-image: url("../../public/arrow-bot.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.work-process-li.active::after {
+  transform: translateY(-50%) rotate(90deg);
+}

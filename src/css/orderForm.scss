@@ -1,0 +1,47 @@
+@use "./main.scss" as main;
+/*lets implement your idea*/
+.lets-implement-your-idea {
+  margin-top: 150px;
+}
+.order-title {
+  @include main.tdp-header-2;
+  @include main.tdp-white-color;
+}
+.custom-form-div {
+  margin-top: 71px;
+}
+.custom-form-input {
+  @include main.tdp-text-2;
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  width: 97.8%;
+  margin-top: 13px;
+  padding: 25px 0 25px 30px;
+  background-color: rgba(39, 39, 39, 1);
+  border-radius: 20px;
+
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.custom-form-input:focus {
+  outline: none;
+}
+.custom-form-input-title {
+  @include main.tdp-text-2;
+  @include main.tdp-white-color;
+}
+.long-button {
+  @include main.tdp-green-bg;
+  @include main.tdp-desk-button-1;
+  border-radius: 20px;
+  margin-top: 75px;
+  margin-bottom: 200px;
+  padding: 30px;
+  text-align: center;
+}

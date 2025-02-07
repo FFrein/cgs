@@ -1,0 +1,17 @@
+@use "./main.scss" as main;
+.product-card {
+}
+.product-card-img {
+  border-radius: 20px;
+
+  width: 387px;
+  height: 386px;
+  gap: 0px;
+  opacity: 0px;
+}
+.product-card-title {
+  @include main.tdp-text-1;
+  @include main.tdp-white-color;
+  margin-top: 30px;
+  width: 387px;
+}

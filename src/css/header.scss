@@ -1,3 +1,4 @@
+@use "./main.scss" as main;
 .header {
   display: flex;
   flex-direction: row;
@@ -15,8 +16,14 @@
   align-items: center;
 }
 
-.header-list li {
+.header-li,
+.header-li-gr {
+  @include main.tdp-desk-bar-1;
+  @include main.tdp-white-color;
   cursor: pointer;
+}
+.header-li-gr {
+  @include main.tdp-green-color;
 }
 
 .sign-in-btn {
@@ -32,4 +39,12 @@
   opacity: 0px;
 
   cursor: pointer;
+}
+
+@media (max-width: 1178px) {
+  .header-li,
+  .header-li-gr {
+    @include main.tdp-desk-bar-2;
+    cursor: pointer;
+  }
 }
