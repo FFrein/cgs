@@ -1,0 +1,184 @@
+@import url("./header.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  background-color: rgb(27, 27, 27);
+}
+
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.base_wrapper {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.dsd-h1,
+.dsd-h2,
+.dsd-btn {
+  font-family: "Rubik Mono One", monospace;
+}
+
+.dsd-h3,
+.dsd-text1,
+.dsd-text2,
+.dsd-text3,
+.dsd-text4,
+.dsd-btn-stroke {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*HEADER*/
+/*2DP Desk*/
+/*colors*/
+@media (max-width: 1178px) {
+  .base_wrapper {
+    max-width: 882px;
+    margin: auto;
+  }
+}
+@media (max-width: 920px) {
+  .base_wrapper {
+    max-width: 348px;
+    margin: auto;
+  }
+}
+/*lets implement your idea*/
+.lets-implement-your-idea {
+  margin-top: 150px;
+}
+
+.order-title {
+  font-family: "Unbounded";
+  font-size: 41px;
+  font-weight: 800;
+  line-height: 50.84px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+
+.custom-form-div {
+  margin-top: 71px;
+}
+
+.custom-form-input {
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 97.8%;
+  margin-top: 13px;
+  padding: 25px 0 25px 30px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 20px;
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.custom-form-input:focus {
+  outline: none;
+}
+
+.custom-form-input-title {
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+}
+
+.long-button {
+  background-color: rgb(198, 255, 52);
+  font-family: "Unbounded";
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 37.5px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border-radius: 20px;
+  margin-top: 75px;
+  margin-bottom: 200px;
+  padding: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1178px) {
+  .lets-implement-your-idea {
+    margin-top: 106px;
+  }
+  .order-title {
+    font-family: Unbounded;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 35.96px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input-title {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 20px 0 20px 30px;
+    border-radius: 7px;
+  }
+  .custom-form-div {
+    margin-top: 42px;
+  }
+  .long-button {
+    font-family: Unbounded;
+    font-size: 14.93px;
+    font-weight: 900;
+    line-height: 23.89px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 42px;
+  }
+}
+
+/*# sourceMappingURL=orderForm.css.map */

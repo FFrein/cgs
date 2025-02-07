@@ -1,0 +1,172 @@
+@import url("./header.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  background-color: rgb(27, 27, 27);
+}
+
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.base_wrapper {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.dsd-h1,
+.dsd-h2,
+.dsd-btn {
+  font-family: "Rubik Mono One", monospace;
+}
+
+.dsd-h3,
+.dsd-text1,
+.dsd-text2,
+.dsd-text3,
+.dsd-text4,
+.dsd-btn-stroke {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*HEADER*/
+/*2DP Desk*/
+/*colors*/
+@media (max-width: 1178px) {
+  .base_wrapper {
+    max-width: 882px;
+    margin: auto;
+  }
+}
+@media (max-width: 920px) {
+  .base_wrapper {
+    max-width: 348px;
+    margin: auto;
+  }
+}
+.tab-service-wrapper {
+  background-color: rgb(39, 39, 39);
+  margin-top: 36px;
+}
+
+.tab-service {
+  background-color: rgb(39, 39, 39);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tab-service-title {
+  font-family: Unbounded;
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: rgb(198, 255, 52);
+  color: rgb(27, 27, 27);
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 45px;
+}
+
+.tab-block {
+  background-color: rgb(39, 39, 39);
+}
+
+.tab-service-text {
+  font-family: "Unbounded";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 39, 39);
+  margin-top: 17px;
+}
+
+.tab-main-text {
+  font-family: "Unbounded";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(39, 39, 39);
+  max-width: 722px;
+}
+
+.tab-left-col {
+  background-color: rgb(39, 39, 39);
+  max-width: 549px;
+}
+
+.service-tab-img {
+  background-color: rgb(39, 39, 39);
+  width: 513px;
+  height: 513px;
+  margin-top: auto;
+}
+
+@media (max-width: 1178px) {
+  .tab-main-text {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .tab-service-title {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 32.8px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .tab-service-text {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .service-tab-img {
+    width: 345px;
+    height: 345px;
+  }
+}
+@media (max-width: 920px) {
+  .tab-service {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .service-tab-img {
+    width: 301px;
+    height: 301px;
+  }
+}
+
+/*# sourceMappingURL=tabServices.css.map */

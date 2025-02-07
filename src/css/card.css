@@ -1,0 +1,119 @@
+@import url("./header.css");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  background-color: rgb(27, 27, 27);
+}
+
+a:visited,
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.base_wrapper {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.dsd-h1,
+.dsd-h2,
+.dsd-btn {
+  font-family: "Rubik Mono One", monospace;
+}
+
+.dsd-h3,
+.dsd-text1,
+.dsd-text2,
+.dsd-text3,
+.dsd-text4,
+.dsd-btn-stroke {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*HEADER*/
+/*2DP Desk*/
+/*colors*/
+@media (max-width: 1178px) {
+  .base_wrapper {
+    max-width: 882px;
+    margin: auto;
+  }
+}
+@media (max-width: 920px) {
+  .base_wrapper {
+    max-width: 348px;
+    margin: auto;
+  }
+}
+.product-card {
+  cursor: pointer;
+}
+
+.product-card-img {
+  border-radius: 20px;
+  width: 387px;
+  height: 386px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.product-card-title {
+  font-family: "Unbounded";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 43.05px;
+  letter-spacing: 0.14em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(255, 255, 255);
+  margin-top: 30px;
+  width: 387px;
+}
+
+@media (max-width: 1178px) {
+  .product-card-img {
+    width: 275px;
+    height: 275px;
+  }
+  .product-card-title {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+    width: 275px;
+    margin-top: 21px;
+  }
+}
+@media (max-width: 920px) {
+  .product-card {
+    margin: auto;
+  }
+  .product-card-img {
+    width: 348px;
+    height: 348px;
+  }
+  .product-card-title {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 30px;
+    width: 348px;
+  }
+}
+
+/*# sourceMappingURL=card.css.map */
