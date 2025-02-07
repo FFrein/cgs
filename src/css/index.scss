@@ -10,6 +10,7 @@
 .edp-subtitle {
   @include main.tdp-text-1;
   @include main.tdp-white-color;
+  max-width: 812px;
 }
 .edp-subtitle-button {
   @include main.tdp-desk-button-1;
@@ -105,4 +106,39 @@
   height: 79px;
 
   border-radius: 20px;
+}
+
+@media (max-width: 1178px) {
+  .edp-subtitle {
+    @include main.tdp-text-3;
+    max-width: 512px;
+  }
+  .edp-subtitle-button {
+    @include main.button-2;
+    width: 300px;
+    height: 53px;
+    border-radius: 14px;
+  }
+  .wawd-title {
+    @include main.subheader-2;
+  }
+  .wwcd-button-menu {
+    grid-template-columns: 426px 426px;
+  }
+  .menu-button {
+    @include main.button-2;
+    height: 53px;
+    border-radius: 14px;
+  }
+  .wwcd-big-button {
+    @include main.button-2;
+    height: 53px;
+    border-radius: 14px;
+  }
+  .cp-title {
+    @include main.subheader-2;
+  }
+  .conceptual-portfolio-store {
+    grid-template-columns: repeat(3, 275px);
+  }
 }

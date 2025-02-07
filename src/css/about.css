@@ -125,9 +125,26 @@ a {
   text-decoration-skip-ink: none;
   color: rgb(255, 255, 255);
   margin-top: 30px;
-  width: 387px;
+  width: 275px;
 }
 
+@media (max-width: 1178px) {
+  .product-card-img {
+    width: 275px;
+    height: 275px;
+  }
+  .product-card-title {
+    font-family: Unbounded;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30.75px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 21px;
+  }
+}
 /*lets implement your idea*/
 .lets-implement-your-idea {
   margin-top: 150px;
@@ -206,6 +223,55 @@ a {
   text-align: center;
 }
 
+@media (max-width: 1178px) {
+  .order-title {
+    font-family: Unbounded;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 35.96px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input-title {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .custom-form-input {
+    font-family: Unbounded;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 15px 0 15px 30px;
+    border-radius: 14px;
+  }
+  .custom-form-div {
+    margin-top: 42px;
+  }
+  .long-button {
+    font-family: Unbounded;
+    font-size: 14.93px;
+    font-weight: 900;
+    line-height: 23.89px;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    border-radius: 14px;
+    padding: 15px;
+    text-align: center;
+  }
+}
 /*О нашей студии*/
 .about-studia {
   margin-top: 106px;
